@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Jordan - Inicio</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background-color: #111; color: #fff; }
+        header { background-color: #000; display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; border-bottom: 3px solid #e21b23; }
+        .logo { font-size: 22px; font-weight: bold; }
+        .logo span { color: #e21b23; }
+        nav a { color: #fff; text-decoration: none; margin-left: 15px; font-weight: bold; }
+        .btn-nav { background-color: #e21b23; padding: 8px 15px; border-radius: 4px; }
+        .btn-logout { background-color: #444; padding: 8px 15px; border-radius: 4px; }
+        .contenedor { max-width: 1000px; margin: 30px auto; padding: 0 20px; text-align: center; }
+        .grid-productos { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 25px; }
+        .card { background-color: #222; border: 1px solid #333; border-radius: 8px; width: 280px; padding: 15px; }
+        .card img { width: 100%; height: 160px; object-fit: cover; border-radius: 6px; }
+        .card h3 { margin: 10px 0; }
+        .precio { color: #e21b23; font-weight: bold; font-size: 18px; }
+        .usuario-saludo { color: #00ff00; font-weight: bold; margin-right: 15px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">JORDAN <span>STORE</span></div>
+        <nav id="menu-navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="login.php">Iniciar Sesión</a>
+            <a href="registro.php" class="btn-nav">Registrarse</a>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <h1>Colección Oficial Jordan</h1>
+        <p style="color: #aaa; margin-top: 8px;">Catálogo de productos disponibles</p>
+        
+        <div class="grid-productos">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=400" alt="Air Jordan 1">
+                <h3>Air Jordan 1 Retro</h3>
+                <p class="precio">$180.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1597045566677-8cf032ed6634?q=80&w=400" alt="Air Jordan 4">
+                <h3>Air Jordan 4 OG</h3>
+                <p class="precio">$210.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=400" alt="Air Jordan 11">
+                <h3>Air Jordan 11 Low</h3>
+                <p class="precio">$190.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/913475d5-7d4f-44d8-b249-662c4d99cfd2/AIR+JORDAN+1+RETRO+LOW+OG.png" alt="Air Jordan 1 Retro Low">
+                <h4>Air Jordan 1 Retro Low</h4>
+                <p class="precio">$200.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://product-media.cdn.t1.com/product-channel/19530/2026/6/20/eca2f7533d1ec63a3f453efacc424fdb.jpg?scale=550"> 
+                <h5>Air Jordan 1 Mid SE Negro</h5>
+                <p class="precio">$130.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://product-media.cdn.t1.com/product-channel/19530/2026/4/25/3b70c632bae2864282cbcb72b8014616.jpg?scale=550"> 
+                <h5>Air Jordan 1 Azul</h5>
+                <p class="precio">$120.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://lustmexico.com/cdn/shop/files/DZ5485-003-1.jpg?v=1771369341&width=1600"> 
+                <h5>Air Jordan 1 High OG</h5>
+                <p class="precio">$100.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://dpjye2wk9gi5z.cloudfront.net/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/zoom/1039016-0005V1.jpg"> 
+                <h5>Tenis Nike Jordan Spizike Low Hombre</h5>
+                <p class="precio">$98.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://deu.com.mx/_next/image?url=https%3A%2F%2Fimg.deu.agency%2Fdeu%2Fair-jordan-1-low-grey-id-444%2Flateral.webp&w=640&q=75"> 
+                <h5>Air Jordan 1 Low Grey</h5>
+                <p class="precio">$124.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e4502ae2-844a-4b08-a5b6-997c92820a50/WMNS+AIR+JORDAN+1+MID.png"> 
+                <h5>Air Jordan 1 Mid</h5>
+                <p class="precio">$185.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/29cf8f40-64d3-4cfe-a61c-fe96e2e96c30/AIR+JORDAN+1+MID+SE.png"> 
+                <h5>Air Jordan 1 Mid SE</h5>
+                <p class="precio">$125.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/151671f3-74e9-409e-86f0-d5a62055996c/AIR+JORDAN+1+MID.png">
+                <h5>Air Jordan 1 Mid</h5>
+                <p class="precio">$140.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/c_limit,w_2880/f_auto,q_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b587cf81-b49a-4200-9a7c-8daa033ed393/WMNS+AIR+JORDAN+1+LOW.png">
+                <h5>Air Jordan 1 Low</h5>
+                <p class="precio">$185.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b92f295f-d1c0-47bb-8647-9049d5f56502/WMNS+AIR+JORDAN+1+LOW.png">
+                <h5>Air Jordan 1 Low mujer</h5>
+                <p class="precio">$175.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/201dcdbc-3c5c-4b69-9401-c5e927a63788/WMNS+AIR+JORDAN+1+MID+SE.png">
+                <h5>Air Jordan 1 Mid SE</h5>
+                <p class="precio">$165.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/89f08d2e-858f-4a55-a3c4-718d25892fbf/AIR+JORDAN+1+MID+SE.png">
+                <h5>Air Jordan 1 Mid SE blanco/rosa</h5>
+                <p class="precio">$98.00 USD</p>
+            </div>
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3f1998b9-a28b-476e-8158-21054ea8037c/WMNS+JORDAN+HEIR+SERIES+2.png">
+                <h5>Jordan Heir Series 2 "Seafoam"</h5>
+                <p class="precio">$55.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/824045b5-abc2-4b17-85c6-f8aad8fd0023/WMNS+JORDAN+HEIR+SERIES+2.png">
+                <h5>Jordan Heir Series 2 "Victory Dance"</h5>
+                <p class="precio">$98.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cda4ddbc-a742-454c-abca-7ce086b0742f/AIR+JORDAN+1+MID+UTILITY.png">
+                <h5>Air Jordan 1 Mid Utility</h5>
+                <p class="precio">$238.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2d370e02-73d7-45f5-8bd6-417baee625dc/AIR+JORDAN+1+RETRO+LOW+OG.png">
+                <h5>Air Jordan 1 Retro Low OG "Garden"</h5>
+                <p class="precio">$293.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d662707a-020e-4a95-b67d-e17f2e2bd6f8/FCB+M+NK+DF+JSY+SS+STAD+HM.png">
+                <h5>FC Barcelona local 2026/27 Stadium</h5>
+                <p class="precio">$100.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a60ff232-421e-49b3-bd40-9c5cd896373c/FCB+M+NK+DFADV+JSY+SS+MATCH+AW.png">
+                <h5>FC Barcelona visitante 2026/27 Match</h5>
+                <p class="precio">$147.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0d26b559-372c-4d03-8169-fa1d70d67ebf/JORDAN+SPIZIKE+LOW.png">
+                <h5>Jordan Spizike Low</h5>
+                <p class="precio">$394.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0cf899cd-6c99-49dd-aab9-44e0ef49d428/W+NIKE+MIND+001.png">
+                <h5>Nike Mind 001</h5>
+                <p class="precio">$98.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8f3a2db8-6f7a-4677-802d-5e251a8c1ae4/WMNS+NIKE+TENNIS+CENTRE.png">
+                <h5>Nike Tennis Centre</h5>
+                <p class="precio">$120.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3c9bb7cc-b31a-4307-8c56-f1b05129cf1a/W+NIKE+ACG+PEGASUS+TRAIL.png">
+                <h5>Nike ACG Pegasus Trail</h5>
+                <p class="precio">$162.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/af76e842-c7e5-44a9-974c-8d337b9568a9/W+AIR+FORCE+1+%2707+SE.png">
+                <h5>Nike Air Force 1 '07 SE</h5>
+                <p class="precio">$2239.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fd384eef-1694-4993-8ca7-f956476a2fc6/WMNS+JORDAN+STRADA.png">
+                <h5>Jordan Strada</h5>
+                <p class="precio">$210.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2d29ef0a-7923-4dcb-92d6-2d5af4dc0529/WMNS+NK+CALM+ELEVATION.png">
+                <h5>Nike Calm Elevation</h5>
+                <p class="precio">$120.00 USD</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ac7fb469-a024-42c0-a4d5-a3ae5a1d9593/W+NIKE+RUN+DEFY.png">
+                <h5>Nike Run Defy</h5>
+                <p class="precio">$127.00 USD</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para verificar la sesión en index.html -->
+    <script>
+        fetch('check_session.php')
+            .then(response => response.json())
+            .then(data => {
+                if (data.logged_in) {
+                    const menu = document.getElementById('menu-navegacion');
+                    menu.innerHTML = `
+                        <a href="index.html">Inicio</a>
+                        <span class="usuario-saludo">Hola, ${data.nombre}</span>
+                        <a href="logout.php" class="btn-logout">Cerrar Sesión</a>
+                    `;
+                }
+            })
+            .catch(error => console.error('Error al verificar sesión:', error));
+    </script>
+
+</body>
+</html>

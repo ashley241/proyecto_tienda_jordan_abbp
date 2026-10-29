@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Definición de codificación de caracteres y configuración para dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Jordan - Inicio</title>
+    
+    <!-- Estilos CSS integrados para el diseño general de la página -->
     <style>
+        /* Restablecimiento de márgenes y box-sizing para todos los elementos */
         * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        /* Estilos generales del cuerpo de la página */
         body { font-family: Arial, sans-serif; background-color: #111; color: #fff; }
+        
+        /* Estilos de la barra de navegación superior (Header) */
         header { background-color: #000; display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; border-bottom: 3px solid #e21b23; }
+        
+        /* Estilos del logotipo */
         .logo { font-size: 22px; font-weight: bold; }
         .logo span { color: #e21b23; }
+        
+        /* Estilos para los enlaces del menú */
         nav a { color: #fff; text-decoration: none; margin-left: 15px; font-weight: bold; }
+        
+        /* Botón de registro */
         .btn-nav { background-color: #e21b23; padding: 8px 15px; border-radius: 4px; }
+        
+        /* Botón para cerrar sesión */
         .btn-logout { background-color: #444; padding: 8px 15px; border-radius: 4px; }
+        
+        /* Contenedor principal para centrar el contenido */
         .contenedor { max-width: 1000px; margin: 30px auto; padding: 0 20px; text-align: center; }
+        
+        /* Rejilla flexible para organizar las tarjetas de productos */
         .grid-productos { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 25px; }
+        
+        /* Estilos de cada tarjeta individual de producto */
         .card { background-color: #222; border: 1px solid #333; border-radius: 8px; width: 280px; padding: 15px; }
         .card img { width: 100%; height: 160px; object-fit: cover; border-radius: 6px; }
         .card h3 { margin: 10px 0; }
+        
+        /* Estilos del texto de precio y del mensaje de bienvenida al usuario */
         .precio { color: #e21b23; font-weight: bold; font-size: 18px; }
         .usuario-saludo { color: #00ff00; font-weight: bold; margin-right: 15px; }
     </style>
 </head>
 <body>
 
+    <!-- Encabezado de la página -->
     <header>
+        <!-- Logotipo de la tienda -->
         <div class="logo">JORDAN <span>STORE</span></div>
+        
+        <!-- Menú de navegación dinámico que se actualizará mediante JavaScript si el usuario inicia sesión -->
         <nav id="menu-navegacion">
             <a href="index.html">Inicio</a>
             <a href="login.php">Iniciar Sesión</a>
@@ -33,10 +61,12 @@
         </nav>
     </header>
 
+    <!-- Contenedor del catálogo de productos -->
     <div class="contenedor">
         <h1>Colección Oficial Jordan</h1>
         <p style="color: #aaa; margin-top: 8px;">Catálogo de productos disponibles</p>
         
+        <!-- Lista en cuadrícula de los productos en venta -->
         <div class="grid-productos">
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=400" alt="Air Jordan 1">
@@ -133,6 +163,7 @@
                 <h5>Air Jordan 1 Mid SE blanco/rosa</h5>
                 <p class="precio">$98.00 USD</p>
             </div>
+            
             <div class="card">
                 <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3f1998b9-a28b-476e-8158-21054ea8037c/WMNS+JORDAN+HEIR+SERIES+2.png">
                 <h5>Jordan Heir Series 2 "Seafoam"</h5>
@@ -221,11 +252,14 @@
 
     <!-- Script para verificar la sesión en index.html -->
     <script>
+        // Realiza una petición asíncrona al script check_session.php
         fetch('check_session.php')
-            .then(response => response.json())
+            .then(response => response.json()) // Convierte la respuesta recibida en formato JSON
             .then(data => {
+                // Evalúa si el usuario ha iniciado sesión previamente
                 if (data.logged_in) {
                     const menu = document.getElementById('menu-navegacion');
+                    // Remplaza los enlaces del menú por un saludo personalizado y el botón de cerrar sesión
                     menu.innerHTML = `
                         <a href="index.html">Inicio</a>
                         <span class="usuario-saludo">Hola, ${data.nombre}</span>
@@ -233,7 +267,7 @@
                     `;
                 }
             })
-            .catch(error => console.error('Error al verificar sesión:', error));
+            .catch(error => console.error('Error al verificar sesión:', error)); // Captura e imprime posibles errores
     </script>
 
 </body>

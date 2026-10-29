@@ -35,7 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Guarda el nombre del usuario en la sesión
             $_SESSION['nombre'] = $usuario['nombre'];
             
-            // Redirige directamente a la página principal index.html
             header("Location: index.html");
             
             // Detiene la ejecución del script después de la redirección
